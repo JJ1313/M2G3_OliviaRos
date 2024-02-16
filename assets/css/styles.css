@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400..00&display=swap');
+
+:root {
+  --clr-tone-0: #000;
+  --clr-tone-1: #0F0F0F;
+  --clr-tone-2: #373A3C;
+  --clr-tone-3: #818A91;
+  --clr-tone-4: #DDDDDD;
+  --clr-tone-5: #FFF;
+
+  --clr-blue: #17A2B8;
+  --clr-blue-light: #56C0E0;
+
+
+  --navbar-height: 71px;
+
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* ------ Sections ------ */
+nav {
+  background-color: var(--clr-tone-2);
+  height: var(--navbar-height);
+
+  & .navbar-brand {
+    color: var(--clr-tone-5);
+  }
+
+}
+
+#hero-section {
+  --max-width: 616px;
+
+  min-height: 630px;
+  background-image: url('../img/bg-hero.jpg');
+  background-size: cover;
+  padding-top: var(--navbar-height);
+  color: var(--clr-tone-5);
+
+  & h2 {
+    font-size: 70px;
+  }
+}
+
+/* ------ Bootstrap ------ */
+
+/* --- Btns */
+.btn.btn-primary,
+.btn.btn-outline-primary {
+  --bs-btn-color: var(--clr-tone-5);
+  --bs-btn-border-color: var(--clr-blue);
+}
+
+.btn.btn-primary {
+  --bs-btn-bg: var(--clr-blue);
+}
+
+/* --- Navlinks */
+.nav-link {
+  --bs-nav-link-color: var(--clr-tone-5);
+  --bs-nav-link-hover-color: var(--clr-blue-light);
+  --bs-navbar-active-color: var(--clr-blue);
+}
